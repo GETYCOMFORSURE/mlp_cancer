@@ -10,6 +10,8 @@ backpropogation: an algorithm for determining how a single training example woul
 
 calculus for backpropagation
 
+How much does a nudge to **w^(L)** change **z^(L)**, how much does that nudge to **z^(L)** change **a^(L)**, and how much does that nudge to **a^(L)** change **C₀**:
+
 $$\frac{\partial C_0}{\partial w^{(L)}} = \underbrace{\frac{\partial z^{(L)}}{\partial w^{(L)}}}_{\text{nudge to } w^{(L)} \to z^{(L)}} \cdot \underbrace{\frac{\partial a^{(L)}}{\partial z^{(L)}}}_{\text{nudge to } z^{(L)} \to a^{(L)}} \cdot \underbrace{\frac{\partial C_0}{\partial a^{(L)}}}_{\text{nudge to } a^{(L)} \to C_0}$$
 
 $$z^{(L)} = w^{(L)} a^{(L-1)} + b^{(L)} \quad\longrightarrow\quad \frac{\partial z^{(L)}}{\partial w^{(L)}} = a^{(L-1)}$$
