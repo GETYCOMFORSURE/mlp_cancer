@@ -17,3 +17,5 @@ $$z^{(L)} = w^{(L)} a^{(L-1)} + b^{(L)} \quad\longrightarrow\quad \frac{\partial
 $$a^{(L)} = \sigma\left(z^{(L)}\right) \quad\longrightarrow\quad \frac{\partial a^{(L)}}{\partial z^{(L)}} = \sigma'\left(z^{(L)}\right)$$
 
 $$C_0 = \left(a^{(L)} - y\right)^2 \quad\longrightarrow\quad \frac{\partial C_0}{\partial a^{(L)}} = 2\left(a^{(L)} - y\right)$$
+
+## 
