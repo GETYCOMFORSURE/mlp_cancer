@@ -1,5 +1,5 @@
 # Phase 1. learn the concept
-## 3B1B deep learning series
+## [3B1B deep learning series](https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi)
 learning -> find the right weights and biases
 
 cost function is a layer of complexity on top of neural network function
