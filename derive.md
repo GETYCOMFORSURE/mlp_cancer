@@ -1,7 +1,7 @@
 # Backpropagation derivation — 1 hidden layer MLP
 
 **Forward pass:**
-- z1 = W1·X + b1
+- z1 = W1·X + b1 # X is the input data
 - a1 = ReLU(z1) = max(0, z1)
 - z2 = W2·a1 + b2
 - a2 = σ(z2) = 1 / (1 + e^(-z2))
