@@ -1,4 +1,4 @@
-# Project Plan: MLP from Scratch on Breast Cancer Data
+# Project Plan: MLP on Breast Cancer Data
 
 ## Phase 1 — Learn the concepts — 2–3h
 - [x] Watch 3Blue1Brown's neural network series, especially the backprop/calculus episodes
