@@ -23,7 +23,7 @@ $$C_0 = \left(a^{(L)} - y\right)^2 \quad\longrightarrow\quad \frac{\partial C_0}
 
 **Gradient descent concepts**
 - Learning rate: step size when updating weights — W = W - lr * dW
-- Epoch: one full pass through all training data
+- Epoch: one full pass through all training data. each epoch the weights get nudged slightly closer to the right answer -> the larger the epoch, the smaller the loss. 
 - Mini-batch SGD: instead of full dataset per update, use random subsets (batches) — faster, adds beneficial noise
 
 ## [CS231n deep learning for computer vision](https://cs231n.github.io/optimization-2/)
