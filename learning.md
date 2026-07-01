@@ -1,14 +1,14 @@
 # Learn the concept
 ## [3B1B deep learning series](https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi)
-learning -> find the right weights and biases
+**learning** -> find the right weights and biases
 
-cost function is a layer of complexity on top of neural network function
+**cost function** is a layer of complexity on top of neural network function
 - neural network function: input -> 784 numbers; output -> 10 numbers; parameters -> 13002 weights & biases
 - cost function: input -> 13002 weights & biases; output -> one number (cost); parameters -> many many training examples
 
-backpropogation: an algorithm for determining how a single training example would like to nudge the weights and biases, specifically, what relative proportions to those changes cause the most rapid decrease to the cost. Stochastic gradient descent is used to is used to speed up computation. 
+**backpropogation**: an algorithm for determining how a single training example would like to nudge the weights and biases, specifically, what relative proportions to those changes cause the most rapid decrease to the cost. Stochastic gradient descent is used to is used to speed up computation. 
 
-calculus for backpropagation:
+**calculus for backpropagation**:
 
 see the logic between parameters
 <img width="1383" height="729" alt="Screenshot 2026-07-01 at 12 00 33" src="https://github.com/user-attachments/assets/56f4f65f-7e44-484a-9294-bb6d46fd4811" />
@@ -22,9 +22,9 @@ $$a^{(L)} = \sigma\left(z^{(L)}\right) \quad\longrightarrow\quad \frac{\partial 
 $$C_0 = \left(a^{(L)} - y\right)^2 \quad\longrightarrow\quad \frac{\partial C_0}{\partial a^{(L)}} = 2\left(a^{(L)} - y\right)$$
 
 **Gradient descent concepts**
-- **Learning rate**: step size when updating weights — W = W - lr * dW
-- **Epoch**: one full pass through all training data
-- **Mini-batch SGD**: instead of full dataset per update, use random subsets (batches) — faster, adds beneficial noise
+- Learning rate: step size when updating weights — W = W - lr * dW
+- Epoch: one full pass through all training data
+- Mini-batch SGD: instead of full dataset per update, use random subsets (batches) — faster, adds beneficial noise
 
 ## [CS231n deep learning for computer vision](https://cs231n.github.io/optimization-2/)
 Each gate in a circuit computes two things:
