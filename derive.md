@@ -1,6 +1,7 @@
 # Backpropagation derivation — 1 hidden layer MLP
 
 **Forward pass:**
+
 X is the input data
 
 - z1 = W1·X + b1
