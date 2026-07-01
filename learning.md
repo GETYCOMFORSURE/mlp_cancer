@@ -9,6 +9,8 @@ cost function is a layer of complexity on top of neural network function
 backpropogation: an algorithm for determining how a single training example would like to nudge the weights and biases, specifically, what relative proportions to those changes cause the most rapid decrease to the cost. Stochastic gradient descent is used to is used to speed up computation. 
 
 calculus for backpropagation:
+<img width="1405" height="746" alt="Screenshot 2026-07-01 at 11 55 31" src="https://github.com/user-attachments/assets/9cd6db60-fe41-4570-8e88-49f875c95f7d" />
+
 
 $$\frac{\partial C_0}{\partial w^{(L)}} = \underbrace{\frac{\partial z^{(L)}}{\partial w^{(L)}}}_{\text{nudge to } w^{(L)} \to z^{(L)}} \cdot \underbrace{\frac{\partial a^{(L)}}{\partial z^{(L)}}}_{\text{nudge to } z^{(L)} \to a^{(L)}} \cdot \underbrace{\frac{\partial C_0}{\partial a^{(L)}}}_{\text{nudge to } a^{(L)} \to C_0}$$
 
