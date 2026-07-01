@@ -1,4 +1,4 @@
-# Phase 1. learn the concept
+# Learn the concept
 ## [3B1B deep learning series](https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi)
 learning -> find the right weights and biases
 
