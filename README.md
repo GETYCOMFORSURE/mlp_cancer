@@ -3,6 +3,7 @@
 A 1-hidden-layer neural network built in numpy
 
 ## Files
+- `plan.md` - project plan that outlines what to do step by step
 - `learning.md` — notes from 3B1B and CS231n
 - `derive.md` — derived backpropagation math
 - `data_loader.py` — load, normalize, shuffle, split, mini-batch generator
