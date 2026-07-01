@@ -18,4 +18,25 @@ $$a^{(L)} = \sigma\left(z^{(L)}\right) \quad\longrightarrow\quad \frac{\partial 
 
 $$C_0 = \left(a^{(L)} - y\right)^2 \quad\longrightarrow\quad \frac{\partial C_0}{\partial a^{(L)}} = 2\left(a^{(L)} - y\right)$$
 
-## 
+## [CS231n deep learning for computer vision](https://cs231n.github.io/optimization-2/)
+Each gate in a circuit computes two things:
+1. Its output (forward pass)
+2. Its local gradient — how much its output changes per unit change in each input
+
+During the backward pass, each gate receives the upstream gradient (how much the 
+final output cares about this gate's output), then multiplies it by its own local 
+gradient to get the gradient for each input. This is the chain rule.
+
+**Example:** x=-2, y=5, z=-4, with q = x+y and f = q*z
+
+Forward pass: q = 3, f = -12
+
+Backward pass:
+- ∂f/∂q = z = -4  (upstream gradient arriving at the add gate)
+- add gate local gradient: ∂q/∂x = 1, ∂q/∂y = 1
+- chain rule: ∂f/∂x = -4 * 1 = -4, ∂f/∂y = -4 * 1 = -4
+
+**Key patterns:**
+- Add gate: distributes upstream gradient equally to all inputs (local gradient = 1)
+- Multiply gate: swaps inputs and scales by upstream gradient
+- Max gate: routes gradient to whichever input was larger, zero to the other
