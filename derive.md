@@ -1,6 +1,6 @@
 # Backpropagation derivation — 1 hidden layer MLP
 
-## Notation key
+**Notation key:**
 - X: input data, shape (batch_size, 30) — 30 features per sample
 - y: true labels, shape (batch_size,) — 0 or 1
 - W1: weights, input → hidden, shape (30, 16)
