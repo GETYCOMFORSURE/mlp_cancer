@@ -1,4 +1,4 @@
-# Backpropagation derivation — 1 hidden layer MLP
+# Backpropagation derivation (hidden layer MLP)
 
 **Notation key:**
 - X: input data, shape (batch_size, 30) — 30 features per sample
