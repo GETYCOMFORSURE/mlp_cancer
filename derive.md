@@ -1,9 +1,21 @@
 # Backpropagation derivation — 1 hidden layer MLP
 
+## Notation key
+- X: input data, shape (batch_size, 30) — 30 features per sample
+- y: true labels, shape (batch_size,) — 0 or 1
+- W1: weights, input → hidden, shape (30, 16)
+- b1: bias, hidden layer, shape (16,)
+- W2: weights, hidden → output, shape (16, 1)
+- b2: bias, output layer, shape (1,)
+- z1: pre-activation, hidden layer = W1·X + b1, shape (batch_size, 16)
+- a1: post-activation, hidden layer = ReLU(z1), shape (batch_size, 16)
+- z2: pre-activation, output layer = W2·a1 + b2, shape (batch_size, 1)
+- a2: post-activation, output = σ(z2), shape (batch_size, 1) — predicted probability
+- L: loss (binary cross-entropy), scalar
+- σ: sigmoid function
+- ReLU: rectified linear unit = max(0, z)
+
 **Forward pass:**
-
-X is the input data
-
 - z1 = W1·X + b1
 - a1 = ReLU(z1) = max(0, z1)
 - z2 = W2·a1 + b2
