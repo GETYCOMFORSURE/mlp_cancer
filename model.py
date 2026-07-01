@@ -19,9 +19,10 @@ def forward(X, W1, b1, W2, b2):
 
 # loss function (binary cross-entropy)
 def loss_function(y, a2):
-  a2 = np.clip(a2, 1e-10, 1 - 1e-10)
-  L = -np.mean(y * np.log(a2) + (1-y) * np.log(1-a2))
-  return L
+    a2 = a2.reshape(-1)  # flatten to (32,)
+    a2 = np.clip(a2, 1e-10, 1 - 1e-10)
+    L = -np.mean(y * np.log(a2) + (1-y) * np.log(1-a2))
+    return L
 
 # backward pass function
 def backward(X, y, a2, z1, a1, W2):
