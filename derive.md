@@ -21,12 +21,13 @@
 
 ∂C/∂b2 = (a2 - y)
 
-∂C/∂W1 = (a2 - y) · W2 · ReLU'(z1) · X
-        = { (a2 - y) · W2 · X   if z1 > 0
-          { 0                    else
+∂C/∂W1:
+- if z1 > 0: (a2 - y) · W2 · X
+- else: 0
 
-∂C/∂b1 = { (a2 - y) · W2   if z1 > 0
-          { 0               else
+∂C/∂b1:
+- if z1 > 0: (a2 - y) · W2
+- else: 0
 
 **ReLU derivative:**
 - ReLU'(z) = 1 if z > 0, else 0
