@@ -21,6 +21,11 @@ $$a^{(L)} = \sigma\left(z^{(L)}\right) \quad\longrightarrow\quad \frac{\partial 
 
 $$C_0 = \left(a^{(L)} - y\right)^2 \quad\longrightarrow\quad \frac{\partial C_0}{\partial a^{(L)}} = 2\left(a^{(L)} - y\right)$$
 
+**Gradient descent concepts**
+- **Learning rate**: step size when updating weights — W = W - lr * dW
+- **Epoch**: one full pass through all training data
+- **Mini-batch SGD**: instead of full dataset per update, use random subsets (batches) — faster, adds beneficial noise
+
 ## [CS231n deep learning for computer vision](https://cs231n.github.io/optimization-2/)
 Each gate in a circuit computes two things:
 1. Its output (forward pass)
