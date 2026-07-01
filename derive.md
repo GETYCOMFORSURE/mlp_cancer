@@ -32,15 +32,15 @@
 
 **Gradients (backward pass):**
 
-∂C/∂W2 = (a2 - y) · a1
+∂L/∂W2 = (a2 - y) · a1
 
-∂C/∂b2 = (a2 - y)
+∂L/∂b2 = (a2 - y)
 
-∂C/∂W1:
+∂L/∂W1:
 - if z1 > 0: (a2 - y) · W2 · X
 - else: 0
 
-∂C/∂b1:
+∂L/∂b1:
 - if z1 > 0: (a2 - y) · W2
 - else: 0
 
